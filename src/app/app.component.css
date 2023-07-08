@@ -1,0 +1,186 @@
+.content{
+    position: relative;
+    float: right;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 82%;
+    padding: 2%;
+    background-color: #232132;
+}
+
+.footer{
+    position:fixed;
+    bottom: 0%;
+    font-weight: 600;
+    width:100%;
+    height: 40px;
+    background-color: #13102d;
+    text-align:center;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    z-index: 20;
+}
+
+/* Navigation bar styles */
+
+.navHeader{
+    background-color:  #13102d;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 2%;
+    padding-left: 5%;
+    margin-bottom: 2rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #ffd900;
+  background-color:  #232132;
+  column-width: 100%;
+  border-radius:0;
+}
+
+
+ul{
+    width: 100%;
+}
+
+.nav-link {
+  column-width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.navbar {
+  width: 18%;
+  height: 100vh;
+  align-items: flex-start;
+  position: fixed;
+  z-index: 10;
+  --bs-navbar-brand-margin-end: 0rem;
+  --bs-navbar-padding-x: 0;
+  padding: 0;
+  background-color: #2e2a47;
+}
+
+.nav {
+  margin-top: 2rem;
+  --bs-nav-link-color: #ffffff;
+  --bs-nav-link-hover-color: #a793bc;
+  --bs-nav-link-disabled-color: var(--bs-secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggler-icon {
+    color: #ffffff;
+  }
+
+.navbar-toggler-icon::after {
+  border: none;
+}
+
+.navbar-toggler {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+}
+
+.container-fluid{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.intro{
+    color:#ffffff;
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom: 1%;
+    padding: 10px;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+h4{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.card{
+    border: none;
+    margin-right: 8px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: transparent;
+}
+
+.chartJsLogo{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 10px;
+}
+
+.card-img-top{
+    align-self: center;
+    width: 7rem;
+    height: 7rem;
+}
+
+.svelte{
+    width: 6rem;
+}
+
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.col-sm-2{
+    margin-left: 3%;
+}
+
+a:hover{
+    color: #9c94d0;
+}
+
+.dotted-line {
+    border: none;
+    border-top: 3px dotted #9c94d0; /* Replace #000 with the desired color */
+}
+
+hr{
+    color: #ffffff;
+}
+
+.fa-hand-point-right{
+    padding: 0%;
+    margin-left: 10px;
+    color: #ffd900;
+}
+
+#barChart, #pieChart, #lineChart, #doughnutChart, #bubbleChart, #scatterChart, #polarAreaChart, #financialChart, #radarChart, #featuresChart{
+    display: none;
+}
+
+.chartIcon{
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    
+    width: 25px;
+    height: 25px;
+}
+
+
+/* .example{
+    background-color: #ffffff;
+} */

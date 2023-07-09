@@ -1,1 +1,17 @@
-<p>line-chart works!</p>
+<div class="lineChart row">
+    <div class = "col-sm-6">
+        <h5>Static Line Chart</h5>
+        <div class="static">
+            <canvas baseChart width="400" height="400"
+                [type]="'line'"
+                [data]="lineChartData"
+                [options]="lineChartOptions"
+                [legend]="lineChartLegend">
+            </canvas>
+        </div>
+    </div>
+    <div class = "dynamic col-sm-6">
+        <h5>Dynamic Line Chart</h5>
+    </div>
+</div>
+    

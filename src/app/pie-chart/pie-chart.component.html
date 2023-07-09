@@ -1,1 +1,19 @@
-<p>pie-chart works!</p>
+<div class="pieChart row">
+    <div class = "col-sm-6">
+        <h5>Static Pie Chart</h5>
+        <div class="static">
+            <canvas baseChart
+                [type]="'pie'"
+                [datasets]="pieChartDatasets"
+                [labels]="pieChartLabels"
+                [options]="pieChartOptions"
+                [plugins]="pieChartPlugins"
+                [legend]="pieChartLegend">
+            </canvas>
+        </div>
+    </div>
+    <div class = "dynamic col-sm-6">
+        <h5>Dynamic Pie Chart</h5>
+    </div>
+</div>
+    

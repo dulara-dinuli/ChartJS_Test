@@ -1,1 +1,17 @@
-<p>radar-chart works!</p>
+<div class="radarChart row">
+    <div class = "col-sm-6">
+        <h5>Static Radar Chart</h5>
+        <div class="static">
+            <canvas baseChart
+                [datasets]="radarChartDatasets"
+                [options]="radarChartOptions"
+                [labels]="radarChartLabels"
+                [type]="'radar'">
+            </canvas>
+        </div>
+    </div>
+    <div class = "dynamic col-sm-6">
+        <h5>Dynamic Radar Chart</h5>
+    </div>
+</div>
+    

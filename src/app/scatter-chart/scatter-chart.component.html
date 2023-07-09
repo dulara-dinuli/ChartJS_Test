@@ -1,1 +1,16 @@
-<p>scatter-chart works!</p>
+<div class="scatterChart row">
+    <div class = "col-sm-6">
+        <h5>Static Scatter Chart</h5>
+        <div class="static">
+            <canvas baseChart
+                [datasets]="scatterChartDatasets"
+                [options]="scatterChartOptions"
+                [type]="'scatter'">
+            </canvas>
+        </div>
+    </div>
+    <div class = "dynamic col-sm-6">
+        <h5>Dynamic Scatter Chart</h5>
+    </div>
+</div>
+    

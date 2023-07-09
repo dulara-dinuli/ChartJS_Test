@@ -1,1 +1,17 @@
-<p style="color: aliceblue;">bar-chart works!</p>
+<div class="barChart row">
+<div class = "col-sm-6">
+    <h5>Static Bar Chart</h5>
+    <div class="static">
+        <canvas baseChart
+            [type]="'bar'"
+            [data]="barChartData"
+            [options]="barChartOptions"
+            [plugins]="barChartPlugins"
+            [legend]="barChartLegend">
+        </canvas>
+    </div>
+</div>
+<div class = "dynamic col-sm-6">
+    <h5>Dynamic Bar Chart</h5>
+</div>
+</div>

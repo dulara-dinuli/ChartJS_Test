@@ -1,1 +1,17 @@
-<p>bubble-chart works!</p>
+<div class="bubbleChart row">
+    <div class = "col-sm-6">
+        <h5>Static Bubble Chart</h5>
+        <div class="static">
+            <canvas baseChart
+                [datasets]="bubbleChartDatasets"
+                [options]="bubbleChartOptions"
+                [legend]="bubbleChartLegend"
+                [type]="'bubble'">
+            </canvas>
+        </div>
+    </div>
+    <div class = "dynamic col-sm-6">
+        <h5>Dynamic Bubble Chart</h5>
+    </div>
+</div>
+    

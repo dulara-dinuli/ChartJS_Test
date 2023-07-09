@@ -13,6 +13,7 @@ import { PolarAreaChartComponent } from './polar-area-chart/polar-area-chart.com
 import { FinancialChartComponent } from './financial-chart/financial-chart.component';
 import { RadarChartComponent } from './radar-chart/radar-chart.component';
 import { FeaturesChartComponent } from './features-chart/features-chart.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FeaturesChartComponent } from './features-chart/features-chart.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

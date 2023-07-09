@@ -1,1 +1,18 @@
-<p>polar-area-chart works!</p>
+<div class="polarAreaChart row">
+    <div class = "col-sm-6">
+        <h5>Static Polar Area Chart</h5>
+        <div class="static">
+            <canvas baseChart
+                [datasets]="polarAreaChartDatasets"
+                [labels]="polarAreaChartLabels"
+                [legend]="polarAreaLegend"
+                [options]="polarAreaOptions"
+                [type]="'polarArea'">
+            </canvas>
+        </div>
+    </div>
+    <div class = "dynamic col-sm-6">
+        <h5>Dynamic Polar Area Chart</h5>
+    </div>
+</div>
+    

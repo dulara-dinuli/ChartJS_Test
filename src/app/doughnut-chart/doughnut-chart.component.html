@@ -1,1 +1,18 @@
-<p>doughnut-chart works!</p>
+<div class="doughnutChart row">
+    <div class = "col-sm-6">
+        <h5>Static Doughnut Chart</h5>
+        <div class="static">
+            <canvas baseChart
+                [labels]="doughnutChartLabels"
+                [datasets]="doughnutChartDatasets"
+                [options]="doughnutChartOptions"
+                [legend]="true"
+                [type]="'doughnut'">
+            </canvas>
+        </div>
+    </div>
+    <div class = "dynamic col-sm-6">
+        <h5>Dynamic Doughnut Chart</h5>
+    </div>
+</div>
+    

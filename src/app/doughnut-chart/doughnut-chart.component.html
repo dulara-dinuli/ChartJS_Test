@@ -1,6 +1,6 @@
 <div class="doughnutChart row">
     <div class = "col-sm-6">
-        <h5>Static Doughnut Chart</h5>
+        <h5>Static Doughnut Chart <span style="font-size:12px">(Hard Coded Data)</span></h5>
         <div class="static">
             <canvas baseChart
                 [labels]="doughnutChartLabels"
@@ -11,8 +11,17 @@
             </canvas>
         </div>
     </div>
-    <div class = "dynamic col-sm-6">
-        <h5>Dynamic Doughnut Chart</h5>
+    <div class = "col-sm-6">
+        <h5>Dynamic Doughnut Chart <span style="font-size:12px">(Data is retrieved from a JSON file)</span></h5>
+        <div class="dynamic">
+            <canvas baseChart
+                [labels]="ddoughnutChartLabels"
+                [datasets]="ddoughnutChartDatasets"
+                [options]="doughnutChartOptions"
+                [legend]="true"
+                [type]="'doughnut'">
+            </canvas>
+        </div>
     </div>
 </div>
     

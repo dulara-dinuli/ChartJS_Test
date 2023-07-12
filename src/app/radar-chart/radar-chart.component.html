@@ -1,6 +1,6 @@
 <div class="radarChart row">
     <div class = "col-sm-6">
-        <h5>Static Radar Chart</h5>
+        <h5>Static Radar Chart <span style="font-size:12px">(Hard Coded Data)</span></h5>
         <div class="static">
             <canvas baseChart
                 [datasets]="radarChartDatasets"
@@ -10,8 +10,16 @@
             </canvas>
         </div>
     </div>
-    <div class = "dynamic col-sm-6">
-        <h5>Dynamic Radar Chart</h5>
+    <div class = "col-sm-6">
+        <h5>Dynamic Radar Chart <span style="font-size:12px">(Data is retrieved from a JSON file)</span></h5>
+        <div class="dynamic">
+            <canvas baseChart
+                [datasets]="dradarChartDatasets"
+                [options]="radarChartOptions"
+                [labels]="dradarChartLabels"
+                [type]="'radar'">
+            </canvas>
+        </div>
     </div>
 </div>
     

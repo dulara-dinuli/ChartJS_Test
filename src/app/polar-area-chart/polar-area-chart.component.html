@@ -1,6 +1,6 @@
 <div class="polarAreaChart row">
     <div class = "col-sm-6">
-        <h5>Static Polar Area Chart</h5>
+        <h5>Static Polar Area Chart <span style="font-size:12px">(Hard Coded Data)</span></h5>
         <div class="static">
             <canvas baseChart
                 [datasets]="polarAreaChartDatasets"
@@ -11,8 +11,17 @@
             </canvas>
         </div>
     </div>
-    <div class = "dynamic col-sm-6">
-        <h5>Dynamic Polar Area Chart</h5>
+    <div class = "col-sm-6">
+        <h5>Dynamic Polar Area Chart <span style="font-size:12px">(Data is retrieved from a JSON file)</span></h5>
+        <div class="dynamic">
+            <canvas baseChart
+                [datasets]="dpolarAreaChartDatasets"
+                [labels]="dpolarAreaChartLabels"
+                [legend]="polarAreaLegend"
+                [options]="polarAreaOptions"
+                [type]="'polarArea'">
+            </canvas>
+        </div>
     </div>
 </div>
     

@@ -14,6 +14,7 @@ import { FinancialChartComponent } from './financial-chart/financial-chart.compo
 import { RadarChartComponent } from './radar-chart/radar-chart.component';
 import { FeaturesChartComponent } from './features-chart/features-chart.component';
 import { NgChartsModule } from 'ng2-charts';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NgChartsModule } from 'ng2-charts';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgChartsModule
+    NgChartsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

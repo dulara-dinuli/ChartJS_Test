@@ -1,6 +1,6 @@
 <div class="barChart row">
 <div class = "col-sm-6">
-    <h5>Static Bar Chart</h5>
+    <h5>Static Bar Chart <span style="font-size:12px">(Hard Coded Data)</span></h5>
     <div class="static">
         <canvas baseChart
             [type]="'bar'"
@@ -11,7 +11,16 @@
         </canvas>
     </div>
 </div>
-<div class = "dynamic col-sm-6">
-    <h5>Dynamic Bar Chart</h5>
+<div class = "col-sm-6">
+    <h5>Dynamic Bar Chart <span style="font-size:12px">(Data is retrieved from a JSON file)</span></h5>
+    <div class="dynamic">
+        <canvas baseChart
+            [type]="'bar'"
+            [data]="dbarChartData"
+            [options]="barChartOptions"
+            [plugins]="barChartPlugins"
+            [legend]="barChartLegend">
+        </canvas>
+    </div>
 </div>
 </div>

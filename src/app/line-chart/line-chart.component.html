@@ -1,6 +1,6 @@
 <div class="lineChart row">
     <div class = "col-sm-6">
-        <h5>Static Line Chart</h5>
+        <h5>Static Line Chart <span style="font-size:12px">(Hard Coded Data)</span></h5>
         <div class="static">
             <canvas baseChart width="400" height="400"
                 [type]="'line'"
@@ -10,8 +10,16 @@
             </canvas>
         </div>
     </div>
-    <div class = "dynamic col-sm-6">
-        <h5>Dynamic Line Chart</h5>
+    <div class = "col-sm-6">
+        <h5>Dynamic Line Chart <span style="font-size:12px">(Data is retrieved from a JSON file)</span></h5>
+        <div class="dynamic">
+            <canvas baseChart width="400" height="400"
+                [type]="'line'"
+                [data]="dlineChartData"
+                [options]="lineChartOptions"
+                [legend]="lineChartLegend">
+            </canvas>
+        </div>
     </div>
 </div>
     

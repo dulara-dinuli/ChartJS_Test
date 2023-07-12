@@ -28,6 +28,20 @@ export class AppComponent {
       element.style.display ="inline-block";
       this.activeChartType = chartType;
     }
+    
+    setTimeout(() => {
+      const element = document.getElementById("defaultContent");
+      if(element){
+      element.style.display='none';
+      }
+      const chartExampleSection = document.getElementById('chartExample');
+      if (chartExampleSection) {
+        chartExampleSection.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+    
   }
 
 }

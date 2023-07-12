@@ -1,6 +1,6 @@
 <div class="scatterChart row">
     <div class = "col-sm-6">
-        <h5>Static Scatter Chart</h5>
+        <h5>Static Scatter Chart <span style="font-size:12px">(Hard Coded Data)</span></h5>
         <div class="static">
             <canvas baseChart
                 [datasets]="scatterChartDatasets"
@@ -9,8 +9,15 @@
             </canvas>
         </div>
     </div>
-    <div class = "dynamic col-sm-6">
-        <h5>Dynamic Scatter Chart</h5>
+    <div class = "col-sm-6">
+        <h5>Dynamic Scatter Chart <span style="font-size:12px">(Data is retrieved from a JSON file)</span></h5>
+        <div class="dynamic">
+            <canvas baseChart
+                [datasets]="dscatterChartDatasets"
+                [options]="scatterChartOptions"
+                [type]="'scatter'">
+            </canvas>
+        </div>
     </div>
 </div>
     

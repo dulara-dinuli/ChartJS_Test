@@ -1,16 +1,23 @@
 <div class="financialChart row">
     <div class = "col-sm-6">
-        <h5>Static Financial Chart</h5>
+        <h5>Static Financial Chart <span style="font-size:12px">(Hard Coded Data)</span></h5>
         <div class="static">
-            <!-- <canvas class="chart" baseChart
+            <canvas baseChart
                 [data]="financialChartData"
                 [options]="financialChartOptions"
                 [type]="financialChartType">
-            </canvas> -->
+            </canvas>
         </div>
     </div>
-    <div class = "dynamic col-sm-6">
-        <h5>Dynamic Financial Chart</h5>
+    <div class = "col-sm-6">
+        <h5>Dynamic Financial Chart <span style="font-size:12px">(Data is generated randomly)</span></h5>
+        <div class="dynamic">
+            <canvas baseChart
+                [data]="dfinancialChartData"
+                [options]="financialChartOptions"
+                [type]="dfinancialChartType">
+            </canvas>
+        </div>
     </div>
 </div>
     

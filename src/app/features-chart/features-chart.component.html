@@ -1,11 +1,25 @@
-<div class="featureChart row">
-    <div class = "col-sm-6">
-        <h5>Static Chart with Features</h5>
-        <div class="static">
-        </div>
-    </div>
-    <div class = "dynamic col-sm-6">
-        <h5>Dynamic Chart with Features</h5>
-    </div>
+<div class="features">
+    <canvas baseChart class="chart"
+            [data]="lineChartData"
+            [options]="lineChartOptions"
+            [type]="lineChartType"
+            (chartHover)="hover($event)"
+            (chartClick)="click($event)">
+    </canvas>
+    <table>
+    <tr>
+        <th *ngFor="let label of lineChartData.labels">{{label}}</th>
+    </tr>
+    <tr *ngFor="let d of lineChartData.datasets; let i=index" [class]="'line-'+i">
+        <td *ngFor="let label of lineChartData.labels; let j=index">{{d && d.data[j]}}</td>
+    </tr>
+    </table>
 </div>
-    
+
+<div class="button-row">
+    <button class="btn" (click)="randomData()">Randomize the Data</button>
+    <button class="btn" (click)="add()">Add new Dataset</button>
+    <button class="btn" (click)="colorChange()">Change the Color</button>
+    <button class="btn" (click)="showHide()">Show/ Hide Label B</button>
+    <button class="btn" (click)="labelChange()">Change Label Name</button>
+</div>
